@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haftalık Dersler</title>
+    <title>Furkan Kaya</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: white;
         }
 
         header {
@@ -18,11 +19,11 @@
         nav {
             display: flex;
             justify-content: center;
-            background-color: #333;
+            background-color: #2c3e50;
         }
 
         nav button {
-            background-color: #333;
+            background-color: #001f3f;
             padding: 10px;
             border: none;
             cursor: pointer;
@@ -62,7 +63,7 @@
 </head>
 <body>
     <header>
-        <h1>Haftalık Dersler</h1>
+        <h1>Laboratuvar Etkinlikleri</h1>
     </header>
 
     <nav>
@@ -87,37 +88,65 @@
 
     <div id="hafta2" class="content">
         <h2>Hafta 2 İçeriği</h2>
-        <a href="dersprogramı.html" onclick="showStory('dersprogramı.html')">Ders Programı</a><br>
-        <a href="tablo2.html" onclick="showStory('tablo2.html')">Tablo2</a><br>
-        <a href="tablo3.html" onclick="showStory('tablo3.html')">Tablo3</a><br>
+        <a href="dersprogramı.html" onclick="showdersprogramı('dersprogramı.html')">Ders Programı</a><br>
+        <a href="tablo2.html" onclick="showtablo2('tablo2.html')">Tablo2</a><br>
+        <a href="tablo3.html" onclick="showtablo3('tablo3.html')">Tablo3</a><br>
     </div>
     <div id="hafta3" class="content">
         <h2>Hafta 3 İçeriği</h2>
-        <a href="üyelikformu.html" onclick="showStory('üyelikformu.html')">Basketbol Üyelik Formu</a><br>
-        <a href="test.html" onclick="showStory('test.html')">HTML Testi</a><br>
+        <a href="üyelikformu.html" onclick="showüyelikformu('üyelikformu.html')">Basketbol Üyelik Formu</a><br>
+        <a href="test.html" onclick="showtest('test.html')">HTML Testi</a><br>
     </div>
     <div id="hafta4" class="content">
         <h2>Hafta 4 İçeriği</h2>
-        <a href="görev1.html" onclick="showStory('görev1.html')">Görev1</a><br>
-        <a href="görev2.html" onclick="showStory('görev2.html')">Görev2</a><br>
+        <a href="görev1.html" onclick="showgörev1('görev1.html')">Görev1</a><br>
+        <a href="görev2.html" onclick="showgörev2('görev2.html')">Görev2</a><br>
     </div>
 
 
     <script>
         function showContent(sectionId) {
-            // Tüm içerikleri gizle
+            
             document.querySelectorAll('.content').forEach(function(content) {
                 content.classList.remove('active');
             });
 
-            // İlgili içeriği göster
+            
             document.getElementById(sectionId).classList.add('active');
         }
 
         function showStory(storyUrl) {
-            // Burada masal dosyasını açmak için gerekli işlemleri yapabilirsiniz
-            // Örneğin, bir pencere açabilir veya AJAX kullanarak içeriği yükleyebilirsiniz
+            
             alert('Masal dosyasını aç: ' + storyUrl);
+        }
+
+        function showdersprogramı(dersprogramıUrl) {
+            
+            alert('Ders Programı dosyasını aç: ' + dersprogramıUrl);
+        }
+        function showtablo2(tablo2Url) {
+            
+            alert('Tablo 2 dosyasını aç: ' + tablo2Url);
+        }
+        function showtablo3(tablo3Url) {
+            
+            alert('Tablo3 dosyasını aç: ' + tablo3Url);
+        }
+        function showüyelikformu(üyelikformu) {
+            
+            alert('Üyelik Formu dosyasını aç: ' + üyelikformu);
+        }
+        function showtest(test) {
+            
+            alert('HTML Testi dosyasını aç: ' + test);
+        }
+        function showgörev1(görev1Url) {
+            
+            alert('Görev1 dosyasını aç: ' + görev1Url);
+        }
+        function showgörev2(görev2Url) {
+            
+            alert('Görev2 dosyasını aç: ' + görev2Url);
         }
     </script>
 </body>
