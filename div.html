@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DİV</title>
+
+    <style>
+        body{
+            background-color: black;
+        }
+        
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            border: 1px solid white;  
+        }
+        .container :hover{
+            color: white;
+            cursor: pointer;
+        }
+        
+        .flexitem{
+            justify-content: space-around;
+            align-items: center;
+            width: 40%;
+            display: flex;
+            align-items: center;
+            width: 50px;
+            padding: 20px;
+            background-color: #696969;
+            height: auto;
+        }
+        .flexitem2{
+            display: flex;
+            width: 50px;
+            padding :20px;
+            background-color:green
+        }
+
+        @media screen and(max-width: 1200px){
+            .flexitem and .flexitem2{
+                width: 40%;
+            }
+        }
+            
+        @media screen and(max-width: 600px){
+            .flexitem and .flexitem2{
+                width: 90%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+     <div class="flexitem" >Kapak</div>
+     <div class="flexitem">İçindekiler</div>
+     <div class="flexitem">Önsöz</div>
+     <div class="flexitem">Bölüm1</div>
+     <div class="flexitem">Bölüm2</div>
+     <div class="flexitem2">Login</div>
+     </div>
+</body>
+</html>
