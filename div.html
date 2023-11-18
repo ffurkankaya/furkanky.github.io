@@ -23,35 +23,36 @@
         
         .flexitem{
             justify-content: space-around;
+            width: 40%;           
             align-items: center;
-            width: 40%;
-           align-items: center;
             width: 50px;
             padding: 20px;
             background-color: #696969;
-            height: auto;
+           
         }
         .flexitem2{
             display: flex;
             width: 50px;
             padding :20px;
-            background-color:green
+            background-color:green;
         }
 
-        @media screen and(max-width: 1200px){
+        @media screen and (max-width: 1200px){
             .container{
                 flex-direction: row;
             }
-            .flexitem and .flexitem2{
+            .flexitem ,
+            .flexitem2{
                 width: 40%;
             }
         }
             
-        @media screen and(max-width: 600px){
+        @media screen and (max-width: 600px){
             .container{
                 flex-direction:column;
             }
-            .flexitem and .flexitem2{
+            .flexitem,
+            .flexitem2{
                 width: 90%;
             }
         }

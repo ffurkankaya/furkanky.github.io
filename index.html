@@ -68,9 +68,6 @@
 
     <nav>
         <button>
-            <a href="#" onclick="showContent('hafta1')">Hafta 1</a>
-        </button>
-        <button>
             <a href="#" onclick="showContent('hafta2')">Hafta 2</a>
         </button>
         <button>
@@ -79,29 +76,40 @@
         <button>
             <a href="#" onclick="showContent('hafta4')">Hafta 4</a>
         </button>
+        <button>
+            <a href="#" onclick="showContent('hafta5,6')">Hafta 5,6</a>
+        </button>
+        <button>
+            <a href="#" onclick="showContent('hafta7')">Hafta 7</a>
+        </button>
     </nav>
 
-    <div id="hafta1" class="content active">
-        <h2>Hafta 1 İçeriği</h2>
+    <div id="hafta2" class="content active">
+        <h2>Hafta 2 İçeriği</h2>
         <a href="masal.html" onclick="showStory('masal.html')"> Masal</a> 
     </div>
 
-    <div id="hafta2" class="content">
-        <h2>Hafta 2 İçeriği</h2>
+    <div id="hafta3" class="content">
+        <h2>Hafta 3 İçeriği</h2>
         <a href="dersprogramı.html" onclick="showdersprogramı('dersprogramı.html')">Ders Programı</a><br>
         <a href="tablo2.html" onclick="showtablo2('tablo2.html')">Tablo2</a><br>
         <a href="tablo3.html" onclick="showtablo3('tablo3.html')">Tablo3</a><br>
     </div>
-    <div id="hafta3" class="content">
-        <h2>Hafta 3 İçeriği</h2>
+    <div id="hafta4" class="content">
+        <h2>Hafta 4 İçeriği</h2>
         <a href="üyelikformu.html" onclick="showüyelikformu('üyelikformu.html')">Basketbol Üyelik Formu</a><br>
         <a href="test.html" onclick="showtest('test.html')">HTML Testi</a><br>
     </div>
-    <div id="hafta4" class="content">
-        <h2>Hafta 4 İçeriği</h2>
+    <div id="hafta5,6" class="content">
+        <h2>Hafta 5,6 İçeriği</h2>
         <a href="görev1.html" onclick="showgörev1('görev1.html')">Görev1</a><br>
         <a href="görev2.html" onclick="showgörev2('görev2.html')">Görev2</a><br>
     </div>
+    <div id="hafta7" class="content">
+        <h2>Hafta 7 İçeriği</h2>
+        <a href="div.html" onclick="showetkinlik1('div.html')">Etkinlik 1</a><br>
+    </div>
+
 
 
     <script>
@@ -147,6 +155,10 @@
         function showgörev2(görev2Url) {
             
             alert('Görev2 dosyasını aç: ' + görev2Url);
+        }
+        function showetkinlik1(divUrl) {
+            
+            alert('Etkinlik1 dosyasını aç: ' + divUrl);
         }
     </script>
 </body>
