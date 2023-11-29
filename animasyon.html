@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animasyon</title>
+
+    <style>
+        
+        .kutu1{
+            background-color: black;
+            width: 100px;
+            height:100px;
+            display: inline-block;
+            margin-right: 80px;
+            transition: transform 0.3s ease;
+            animation: renkDegisimi 4s linear infinite;
+        }
+
+        @keyframes renkDegisimi {
+            0%  { transform: translateY(0px); background-color: red; }
+            25% { transform: translateY(50px); background-color: yellow; }
+            50% { transform: translateY(100px); background-color: green; }
+            75% { transform: translateY(50px); background-color: blue; }
+            100%{ transform: translateY(0px); background-color: red; }
+        }
+
+        .kutu2{
+            background-color: #363062;
+            width: 180px;
+            height:180px ;
+            display: inline-block;
+            margin-right: 80px;
+            margin-left: 80px;
+            animation: dondur 4s linear infinite;
+        }
+
+        @keyframes dondur{
+             0%  { transform:translateX(0) translateY(0) rotate(0deg);}
+            25% { transform:translateX(50px) translateY(0) rotate(90deg);}
+            50% { transform:translateX(50px) translateY(120px) rotate(180deg);}
+            75% { transform:translateX(0) translateY(120px) rotate(270deg);}
+            100%{ transform:translateX(0) translateY(0) rotate(360deg);}  
+        }
+
+        
+
+        .kutu3{
+            background-color: #D2DE32;
+            width: 130px;
+            height:130px ;
+            display: inline-block;
+            margin-right: 80px;
+            margin-left: 80px;
+            animation: buyukucul 4s linear infinite;
+        }
+
+        @keyframes buyukucul{
+            0%  { transform: scale(1);}
+            25% { transform: scale(1.5);}
+            50% { transform: scale(1);}
+            
+        }
+
+        .kutu4{
+            background-color: #005B41;
+            width: 110px;
+            height:110px ;
+            display: inline-block;
+            margin-right: 80px;
+            margin-left: 80px;
+            animation: saga 5s linear infinite;
+        }
+
+        @keyframes saga{
+            0%{transform: translateX(0px);}
+            50%{transform: translateX(50px);}
+            100%{transform: translateX(0px);}
+        }
+    </style>
+</head>
+<body>
+    <div class="kutu1"></div>
+    <div class="kutu2"></div>
+    <div class="kutu3"></div>
+    <div class="kutu4"></div>
+    <div class="renklikutu"></div>
+</body>
+</html>

@@ -82,6 +82,9 @@
         <button>
             <a href="#" onclick="showContent('hafta7')">Hafta 7</a>
         </button>
+        <button>
+            <a href="#" onclick="showContent('hafta8')">Hafta 8</a>
+        </button>
     </nav>
 
     <div id="hafta2" class="content active">
@@ -102,14 +105,19 @@
     </div>
     <div id="hafta5,6" class="content">
         <h2>Hafta 5,6 İçeriği</h2>
-        <a href="görev1.html" target="_blank" onclick="showgörev1('görev1.html')">External</a><br>
-        <a href="görev2.html" target="_blank" onclick="showgörev2('görev2.html')">İnternal</a><br>
-        <a href="inline.html" target="_blank" onclick="showgörev2('görev2.html')">İnline</a><br>
-        <a href="vennsemasi.html" target="_blank" onclick="showgörev2('görev2.html')">Venn Şeması</a><br>
+        <a href="görev1.html" target="_blank" onclick="showexternal('görev1.html')">External</a><br>
+        <a href="görev2.html" target="_blank" onclick="showinternal('görev2.html')">İnternal</a><br>
+        <a href="inline.html" target="_blank" onclick="showinline('inline.html')">İnline</a><br>
+        <a href="vennsemasi.html" target="_blank" onclick="showvenn('vennsemasi.html')">Venn Şeması</a><br>
     </div>
     <div id="hafta7" class="content">
         <h2>Hafta 7 İçeriği</h2>
         <a href="div.html" target="_blank" onclick="showetkinlik1('div.html')">Etkinlik 1</a><br>
+    </div>
+    <div id="hafta8" class="content">
+        <h2>Hafta 8 İçeriği</h2>
+        <a href="animasyon.html" target="_blank" onclick="showanimasyon('animasyon.html')">Animasyon</a><br>
+        <a href="kutucuklar.html" target="_blank" onclick="showkutucuklar('kutucuklar.html')">Kutucuklar</a><br>
     </div>
 
 
@@ -150,18 +158,37 @@
             
             alert('HTML Testi dosyasını aç: ' + test);
         }
-        function showgörev1(görev1Url) {
+        function showexternal(görev1Url) {
             
-            alert('Görev1 dosyasını aç: ' + görev1Url);
+            alert('External dosyasını aç: ' + görev1Url);
         }
-        function showgörev2(görev2Url) {
+        function showinternal(görev2Url) {
             
-            alert('Görev2 dosyasını aç: ' + görev2Url);
+            alert('İnternal dosyasını aç: ' + görev2Url);
         }
+       
+        function showinline(inlineUrl) {
+            
+            alert('İnline dosyasını aç: ' + inlineUrl);
+        }
+        function showvenn(vennUrl) {
+            
+            alert('Venn Şeması dosyasını aç: ' + vennUrl);
+        }
+
         function showetkinlik1(divUrl) {
             
             alert('Etkinlik1 dosyasını aç: ' + divUrl);
         }
+        function showanimasyon(animasyonUrl) {
+            
+            alert('Animasyon dosyasını aç: ' + animasyonUrl);
+        }
+        function showkutucuklar(kutucuklarUrl) {
+            
+            alert('Kutucuklar dosyasını aç: ' + kutucuklarUrl);
+        }
+        
     </script>
 </body>
 </html>
