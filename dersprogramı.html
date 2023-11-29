@@ -4,94 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ders Programı</title>
-   
+
+    <style>
+        table {
+            width: 70%;
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
+    <table>
+        <thead>
+            <tr>
+                <th>Saat</th>
+                <th>Pazartesi</th>
+                <th>Salı</th>
+                <th>Çarşamba</th>
+                <th>Perşembe</th>
+                <th>Cuma</th>
+            </tr>
+        </thead>
 
-<h2>Ders Programı</h2>
+        <tbody>
+            <tr>
+                <td>8.40-9.30</td>
+                <td rowspan="2">BTE307</td>
+                <td rowspan="2">BTE113</td>
+                <td></td>
+                <td></td>
+                <td rowspan="2">BTE311</td>
+            </tr>
 
-<table width="100%" border="2">
-    <tr>
-        <th>Saatler</th>
-        <th>Pazartesi</th>
-        <th>Salı</th>
-        <th>Çarşamba</th>
-        <th>Perşembe</th>
-        <th>Cuma</th>
-    </tr>
-    <tr>
-        <td>8:40-9:30</td>
-        <td>BTE307 </td>
-        <td>BTE113 </td>
-        <td>-</td>
-        <td>-</td>
-        <td>BTE311 </td>
-    </tr>
-    <tr>
-        <td>9.40-10.30</td>
-        <td>BTE307</td>
-        <td>BTE113</td>
-        <td>-</td>
-        <td>BTE219</td>
-        <td>BTE311</td>
-    </tr>
-    <tr>
-        <td>10.40-11.30</td>
-        <td>-</td>
-        <td>BTE113</td>
-        <td>-</td>
-        <td>BTE219</td>
-        <td>BTE311</td>
-    </tr>
-    <tr>
-        <td>11.40-12.30</td>
-        <td>-</td>
-        <td>-</td>
-        <td>BTE309</td>
-        <td>EGT303</td>
-        <td>BTE311 <br> LAB</td>
-    </tr>
-    <tr>
-        <td>12.40-13.30</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-        <td>EGT303</td>
-        <td>BTE311 <br> LAB</td>
-    </tr>
-    <tr>
-        <td>13.40-14.30</td>
-        <td>BTE307 <br> LAB</td>
-        <td>-</td>
-        <td>Egt304</td>
-        <td>-</td>
-        <td>-</td>
-    </tr>
-    <tr>
-        <td>14.40-15.30</td>
-        <td>BTE307 <br> LAB</td>
-        <td>-</td>
-        <td>Egt304</td>
-        <td>-</td>
-        <td>-</td>
-    </tr>
-    <tr>
-        <td>15.40-16.30</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-    </tr>
-    <tr>
-        <td>16.40-17.30</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-    </tr>
-</table>
+            <tr>
+                <td>9.40-10.30</td>
+                <td></td>
+                <td rowspan="3">BTE219</td>
+            </tr>
 
+            <tr>
+                <td>10.40-11.30</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td> 
+            </tr>
+
+            <tr>
+                <td>11.40-12.30</td>
+                <td></td>
+                <td></td>
+                <td rowspan="2">BTE309</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>12.40-13.30</td>
+                <td></td>
+                <td ></td>
+                <td rowspan="2">EGT303</td>
+                <td ></td>
+            </tr>
+
+            <tr>
+                <td>13.40-14.30</td>
+                <td rowspan="2">BTE307 LAB</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>14.40-15.30</td>
+                <td></td>
+                <td rowspan="2">EGT304</td>
+                <td ></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>15.40-16.30</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>16.40-17.30</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
