@@ -1,0 +1,25 @@
+
+table {
+    width: 70%;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+.sinif{
+    background-color: blueviolet ;
+}
+
+.saatler{
+    background-color: aqua;
+}
+
+.dersler{
+    background-color: #FF6C22;
+}
+
