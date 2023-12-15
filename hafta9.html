@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            margin: 350px;
+            padding: 50px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <img src="" id="res" width="800" height="600"> 
+    <script>
+            
+            var letters = '0123456789ABCDEF';
+            var color ='#';
+            for ( var i= 0; i < 6; i++) {
+                color += letters [Math.floor(Math.random()*16)];
+            }
+        
+            document.body.style.backgroundColor = color;
+
+            var resimler =[
+            'resim1.jpg',
+            'resim2.jpg',
+            'resim3.jpg',
+            'resim4.jpg',
+            'resim5.jpg',
+            'resim6.jpg',
+            'resim7.jpg',
+            ];
+        
+                var randomResim = resimler[Math.floor(Math.random()*resimler.length)];
+                document.getElementById("res").src=randomResim;
+                
+            
+           
+    </script>
+    
+     
+</body>
+</html>
